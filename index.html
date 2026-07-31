@@ -10,8 +10,8 @@
     />
     <meta name="theme-color" content="#0b0b0a" />
     <link rel="icon" href="data:," />
-    <script type="module" crossorigin src="./assets/index-C2YEmcfY.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-D3pVOVcs.css">
+    <script type="module" crossorigin src="./assets/index-Cs9fJxkJ.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BBpquEvS.css">
   </head>
   <body>
     <div id="grain" aria-hidden="true"></div>
@@ -26,8 +26,16 @@
         <canvas
           id="stage-canvas"
           class="showcase-canvas"
-          aria-label="3D preview of the Balenciaga Track trainer, rotating"
+          tabindex="0"
+          role="application"
+          aria-label="3D preview of the Balenciaga Track trainer"
+          aria-describedby="stage-canvas-help"
         ></canvas>
+        <p class="visually-hidden" id="stage-canvas-help">
+          Interactive 3D model. Focus it and use the arrow keys to rotate, plus
+          and minus to zoom. The previous and next colorway buttons cycle
+          through the four available colorways.
+        </p>
 
         <div class="hud-chrome">
           <header class="hud-header" id="top">
@@ -159,7 +167,7 @@
         </div>
       </section>
 
-      <section class="specs" aria-label="Construction details">
+      <section class="specs" id="specifications" aria-label="Construction details">
         <div class="specs__group">
           <h3>Upper</h3>
           <p>Layered mesh and nylon panels, bonded and stitched, with a moulded TPU cage over the midfoot.</p>
