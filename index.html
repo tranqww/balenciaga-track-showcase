@@ -10,8 +10,8 @@
     />
     <meta name="theme-color" content="#0b0b0a" />
     <link rel="icon" href="data:," />
-    <script type="module" crossorigin src="./assets/index-DM-hu4JP.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DOWF5GtN.css">
+    <script type="module" crossorigin src="./assets/index-CNvaOYHi.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-qkDL6jvW.css">
   </head>
   <body>
     <div id="grain" aria-hidden="true"></div>
@@ -44,42 +44,47 @@
     </header>
 
     <main id="main">
-      <section class="configurator" id="configurator" aria-label="Product configurator">
-        <div class="configurator__stage">
-          <canvas id="stage-canvas" aria-label="3D preview of the Balenciaga Track trainer, rotating"></canvas>
-          <div class="stage-status" id="stage-status" role="status" aria-live="polite">Loading model&hellip;</div>
-          <div class="stage-hint">Drag to rotate &middot; Scroll to zoom</div>
-        </div>
+      <div class="showcase-frame" id="showcase-frame">
+        <div class="showcase-frame__tint showcase-frame__tint--a" id="tint-a"></div>
+        <div class="showcase-frame__tint showcase-frame__tint--b" id="tint-b"></div>
 
-        <div class="configurator__panel">
-          <p class="eyebrow">Trainer &middot; Unisex</p>
-          <h1 class="product-name">Track</h1>
-          <p class="product-price">$ 995</p>
-
-          <p class="product-copy">
-            Cross country, running and hiking codes pushed past their working
-            proportions. Multi-layered mesh and nylon upper on a chunky,
-            technical outsole.
-          </p>
-
-          <div class="colorway-picker" role="group" aria-label="Choose colorway">
-            <span class="colorway-picker__label" id="colorway-label">Colorway &mdash; <span id="colorway-name">Black / Bordeaux</span></span>
-            <div class="swatch-row" id="swatch-row" aria-labelledby="colorway-label"></div>
+        <section class="configurator" id="configurator" aria-label="Product configurator">
+          <div class="configurator__stage">
+            <canvas id="stage-canvas" aria-label="3D preview of the Balenciaga Track trainer, rotating"></canvas>
+            <div class="stage-status" id="stage-status" role="status" aria-live="polite">Loading model&hellip;</div>
+            <div class="stage-hint">Drag to rotate &middot; Scroll to zoom</div>
           </div>
 
-          <div class="size-picker" role="group" aria-label="Choose size">
-            <span class="size-picker__label">Size &mdash; EU</span>
-            <div class="size-row" id="size-row"></div>
-          </div>
+          <div class="configurator__panel" id="configurator-panel">
+            <p class="eyebrow" data-hero-item>Trainer &middot; Unisex</p>
+            <h1 class="product-name" data-hero-item>Track</h1>
+            <p class="product-price" data-hero-item>$ 995</p>
 
-          <div class="configurator__actions">
-            <button class="btn btn--primary" type="button">Add to bag</button>
-            <button class="btn btn--ghost" type="button">Save</button>
-          </div>
+            <p class="product-copy" data-hero-item>
+              Cross country, running and hiking codes pushed past their working
+              proportions. Multi-layered mesh and nylon upper on a chunky,
+              technical outsole.
+            </p>
 
-          <p class="product-meta">Made in Italy. Ships in 3 to 5 days.</p>
-        </div>
-      </section>
+            <div class="colorway-picker" role="group" aria-label="Choose colorway" data-hero-item>
+              <span class="colorway-picker__label" id="colorway-label">Colorway &mdash; <span id="colorway-name">Black / Bordeaux</span></span>
+              <div class="swatch-row" id="swatch-row" aria-labelledby="colorway-label"></div>
+            </div>
+
+            <div class="size-picker" role="group" aria-label="Choose size" data-hero-item>
+              <span class="size-picker__label">Size &mdash; EU</span>
+              <div class="size-row" id="size-row"></div>
+            </div>
+
+            <div class="configurator__actions" data-hero-item>
+              <button class="btn btn--primary" type="button">Add to bag</button>
+              <button class="btn btn--ghost" type="button">Save</button>
+            </div>
+
+            <p class="product-meta" data-hero-item>Made in Italy. Ships in 3 to 5 days.</p>
+          </div>
+        </section>
+      </div>
 
       <section class="intro" id="construction">
         <div class="intro__figure">
